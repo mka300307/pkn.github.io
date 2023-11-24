@@ -22,6 +22,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -224,15 +225,38 @@ header a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
+.wisata .card-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-with-title {
+    position: relative;
+}
 
 .image-with-title img {
     /* Mungkin ada gaya lain untuk gambar di sini */
-    margin-bottom: 10px; /* Spasi antara gambar dan teks */
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 14px 10px 30px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 14px 10px 30px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 30px 2px rgba(0,0,0,0.75);
 }
 
 .image-with-title h2 {
-    /* Gaya untuk judul */
-    text-align: center; /* Untuk memastikan judul berada di tengah */
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 20px;
+    color: white;
 }
